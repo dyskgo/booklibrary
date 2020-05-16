@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet"> 
+        <title>Library</title>
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+    </head>
+    <body>
+    <div class="body">
+        <div class="header">
+            <h1 id="top-heading">Personal Book Library</h1>
+        </div>
+        <button id="add-book">Add New Book</button>
+        <div id="library"> 
+            <div id="library-heading">
+                <div>Book Title</div>
+                <div>Author</div>
+                <div>Pages</div>
+                <div>Read</div>
+                <div>Delete</div>
+            </div>
+            <div id="library-chart">
+            </div>  
+        </div> 
+        <div id="overlay">
+        <form id="book-form" action="" method="post">
+            <h1>Add a Book</h1>
+            <label for="book-name">Book Name</label>
+            <input type="text" id="book-name" name="book-name" required>
+            <label for="author-name">Author</label>
+            <input type="text" id="author-name" name="author-name" required>
+            <label for="pages">Pages</label>
+            <input type="number" id="pages" name="pages" required>
+            <div id="buttons">
+                <input type="submit" value="Submit" id="submit">
+                <button id="cancel">Cancel</button>
+            </div> 
+        </form>
+        </div>
+        </div>
+        <script src="/script.js"></script>
+    </body>
+</html>
